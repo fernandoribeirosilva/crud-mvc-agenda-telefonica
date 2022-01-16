@@ -2,19 +2,16 @@
 namespace src\controllers;
 
 use \core\Controller;
+use src\models\Pessoa;
 
 class HomeController extends Controller {
 
     public function index() {
-        $this->render('home', ['nome' => 'Bonieky']);
-    }
+        $pessoas = Pessoa::select()->execute();
 
-    public function sobre() {
-        $this->render('sobre');
-    }
-
-    public function sobreP($args) {
-        print_r($args);
+        $this->render('home', [
+          'pessoas' => $pessoas]
+        );
     }
 
 }
