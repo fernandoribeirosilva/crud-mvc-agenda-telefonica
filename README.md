@@ -13,6 +13,9 @@ Todos os arquivos de **configuração** e aplicação estão dentro da pasta *sr
 
 As configurações de Banco de Dados e URL estão no arquivo *src/Config.php*
 
+
+Para este projeto funcionar é necessario que importe o **Banco de Dados**, que esta na pasta *Banco de Dados*.
+
 É importante configurar corretamente a constante *BASE_DIR*:
 > const BASE_DIR = '/**PastaDoProjeto**/public';
 
